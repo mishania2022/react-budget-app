@@ -11,18 +11,11 @@ const Input = styled.input`
   display: block;
   width: 100%;
   padding: 15px 20px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
   border-radius: 10px;
   border: none;
-  margin-bottom: 20px;
-
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   font-size: 16px;
-  flood-color: ${Color.DarkPink};
-
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-  }
 `;
 
 export { Title, Input };

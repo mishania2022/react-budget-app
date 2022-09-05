@@ -26,4 +26,21 @@ const Button = styled.button`
   margin: 30px 20px 0 0;
 `;
 
-export { Title, StyledBudget, Button };
+const Input = styled.input`
+  background-color: ${Color.LightBlue};
+  border-radius: 10px;
+  border: none;
+  padding: 36px 38px 40px 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  :active,
+  :hover,
+  :focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+`;
+
+export { Title, StyledBudget, Button, Input };

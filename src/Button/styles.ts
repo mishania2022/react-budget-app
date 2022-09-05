@@ -4,13 +4,13 @@ import { Color } from "../../src/config/colors";
 export const StyledButton = styled.button`
   padding: 15px 0px;
   width: 100%;
+  margin-top: 10px;
   background: ${Color.LightBlue};
   color: ${Color.White};
   font-size: 16px;
-  border: none;
-  margin-top: 10px;
   border-radius: 10px;
-  transition: all 0.3s;
+  border: none;
+  transition: all 0.4s;
 
   &:hover {
     cursor: pointer;
