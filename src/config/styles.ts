@@ -4,20 +4,19 @@ import { Media } from "./media";
 
 const Wrapper = styled.div`
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 10px;
   max-width: 480px;
   min-height: 100vh;
   background: ${Color.White};
 
   ${Media.MD} {
     max-width: 744px;
-    padding: 190px 0px;
+    padding: 20px 10px;
   }
 
   ${Media.SM} {
-    margin-top: 0px;
     max-width: 390px;
-    padding: 100px 0px 90px;
+    padding: 20px 10px;
   }
 `;
 

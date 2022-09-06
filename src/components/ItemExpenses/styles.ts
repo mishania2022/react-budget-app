@@ -12,6 +12,7 @@ const StyledItemExpenses = styled.li`
   margin-bottom: 10px;
 `;
 const Name = styled.div`
+  width: calc(70%);
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -28,9 +29,11 @@ const Cost = styled.div`
 `;
 
 const Button = styled.button`
+  padding: 5px;
   background: none;
   border: none;
   color: ${Color.DarkPink};
+  font-size: 20px;
 `;
 
 export { StyledItemExpenses, Name, Cost, Button };

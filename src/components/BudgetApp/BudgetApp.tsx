@@ -7,10 +7,10 @@ import { StyledBudgetApp } from './styles'
 export const BudgetApp = () => {
   return (
     <StyledBudgetApp>
-      <HeaderBudgetApp/>
-      <Budget/>
-      <Remaining/>
-      <Spent/>
+      <HeaderBudgetApp />
+      <Budget />
+      <Remaining />
+      <Spent />
     </StyledBudgetApp>
   )
 }

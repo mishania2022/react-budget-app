@@ -5,9 +5,8 @@ import { useToggle } from "../../hooks/useToggle";
 import { useExpensesContext } from "../../context/ExpensesContext/ExpensesContext";
 
 export const Remaining = () => {
-  const { budget, setBudget } = useBudgetContext();
+  const { budget } = useBudgetContext();
   const { currency } = useCurrencyContext();
-  const [isActive, toggleIsActive] = useToggle(false);
   const { expenses } = useExpensesContext();
   const spent = () => {
     return expenses.reduce((sum, expense) => +sum + +expense.cost, +0);

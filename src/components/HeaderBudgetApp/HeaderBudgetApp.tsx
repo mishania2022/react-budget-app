@@ -6,7 +6,7 @@ export const HeaderBudgetApp = () => {
   return (
     <StyledHeaderBudgetApp>
       <Title>BudgetApp</Title>
-      <CustomSelect/>
+      <CustomSelect />
     </StyledHeaderBudgetApp>
   );
 };

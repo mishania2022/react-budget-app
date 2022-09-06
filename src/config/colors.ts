@@ -6,5 +6,4 @@ export enum Color {
   White = "#FFFFFF",
   Red = "#FF0000",
   DarkPink = "#C884A6",
-  Violet = "#CCD5FF",
 }

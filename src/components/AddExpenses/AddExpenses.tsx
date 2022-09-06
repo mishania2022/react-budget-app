@@ -1,5 +1,5 @@
 import { SubmitHandler, useForm } from "react-hook-form";
-import { Button } from "../../Button/Button";
+import { Button } from "../Button/Button";
 import { Title } from "../AddExpenses/styles";
 import { Input } from "./styles";
 import { useExpensesContext } from "../../context/ExpensesContext/ExpensesContext";

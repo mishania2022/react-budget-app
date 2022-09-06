@@ -10,6 +10,7 @@ export const CustomStyles: StylesConfig<IOption> = {
   valueContainer: (styles) => ({
     ...styles,
     textAlign: "center",
+    fontSize:"12px"
   }),
   singleValue: (styles) => ({
     ...styles,
@@ -22,6 +23,7 @@ export const CustomStyles: StylesConfig<IOption> = {
     ...styles,
     color: "black",
     textAlign: "center",
+    fontSize:"12px"
   }),
   control: (styles) => ({
     ...styles,
