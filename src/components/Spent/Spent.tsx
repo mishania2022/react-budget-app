@@ -13,7 +13,7 @@ export const Spent = () => {
   return (
     <StyledSpent>
       <Title>
-        Spent so far:{" "}
+        Spent so far: {currency} 
         {expenses.reduce((sum, expense) => +sum + +expense.cost, +0)}
       </Title>
     </StyledSpent>

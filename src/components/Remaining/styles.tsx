@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { Color } from "../../config/colors";
 
-const StyledRemaining = styled.div`
-  background: ${Color.Gray};
+const StyledRemaining = styled.div<{ $spending: number }>`
+  background: ${({ $spending }) =>
+    $spending >= 0 ? Color.Gray : Color.Red};
   border-radius: 10px;
   margin-bottom: 20px;
 `;

@@ -9,7 +9,7 @@ export const ListExpenses = () => {
     <StyledListExpenses>
       {expenses.length > 0 ? (
         expenses.map((expense) => {
-          return <ItemExpenses name={expense.name} cost={expense.cost} />;
+          return <ItemExpenses name={expense.name} cost={expense.cost} id={expense.id}/>;
         })
       ) : (
         <Empty>Oooops 🙈</Empty>

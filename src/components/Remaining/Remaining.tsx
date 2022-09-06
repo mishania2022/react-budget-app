@@ -9,13 +9,26 @@ export const Remaining = () => {
   const { currency } = useCurrencyContext();
   const [isActive, toggleIsActive] = useToggle(false);
   const { expenses } = useExpensesContext();
+  const spent = () => {
+    return expenses.reduce((sum, expense) => +sum + +expense.cost, +0);
+  };
+  const remain = () => {
+    return budget - spent();
+  };
 
   return (
-    <StyledRemaining>
-      <Title>
-        Remaining: {currency}
-        {budget - expenses.reduce((sum, expense) => +sum + +expense.cost, +0)}
-      </Title>
+    <StyledRemaining $spending={budget - spent()}>
+      {remain() >= 0 ? (
+        <Title>
+          Remaining: {currency}
+          {remain()}
+        </Title>
+      ) : (
+        <Title>
+          Overspending by : {currency}
+          {-remain()}
+        </Title>
+      )}
     </StyledRemaining>
   );
 };

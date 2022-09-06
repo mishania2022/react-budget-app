@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { Color } from "../../config/colors";
 
-const Title = styled.h3`
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  padding: 36px 70px 40px 20px;
+const Title = styled.h2`
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 36px 0 40px 0;
 `;
 const Input = styled.input`
   display: block;
