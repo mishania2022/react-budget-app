@@ -7,7 +7,7 @@ const useContextExpensesValue = () => {
   const [expensesContext, setExpensesContext] = useState<IExpensesContext>({
     expenses: [],
 
-    setExpense: (newExpenses) => {
+    addExpense: (newExpenses) => {
       setExpensesContext((ctx) => ({
         ...ctx,
         expenses: [...ctx.expenses, newExpenses],
@@ -17,7 +17,7 @@ const useContextExpensesValue = () => {
     deleteExpense: (id: string) => {
       setExpensesContext((ctx) => ({
         ...ctx,
-        expenses: [...ctx.expenses].filter((exp) => exp.id !== id),
+        expenses: [...ctx.expenses].filter((expense) => expense.id !== id),
       }));
     },
   });

@@ -8,7 +8,7 @@ export type InputValues = {
 
 export interface IExpensesContext {
   expenses: InputValues[];
-  setExpense: (newExpenses: InputValues) => void;
+  addExpense: (newExpenses: InputValues) => void;
   deleteExpense: (id: string) => void;
 }
 

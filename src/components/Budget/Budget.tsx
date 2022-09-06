@@ -31,7 +31,7 @@ export const Budget = () => {
       ) : (
         <>
           <Title>
-            Budget: {budget} {currency}
+            Budget: {currency} {budget} 
           </Title>
           <Button type="button" onClick={handleButtonEdit}>
             Edit
