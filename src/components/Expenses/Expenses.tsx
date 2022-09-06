@@ -27,7 +27,7 @@ export const Expenses = () => {
     <StyledExpenses>
       <Title>Expenses</Title>
       <SearchExpenses {...searchInput} />
-      <ListExpenses searchExpenses={searchExpenses} />
+      <ListExpenses searchExpenses={searchExpenses} searchInputValue={searchInput.value}/>
     </StyledExpenses>
   );
 };
